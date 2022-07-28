@@ -36,4 +36,14 @@ def vogal(letra):
 entrada=input("Digite uma letra\n")
 vogal(entrada)
 
-#5
+5
+nota1=input("Digite a primeira nota:\n")
+nota2=input("Digite a segunda nota:\n")
+media=(int(nota1)+int(nota2))/2
+if(media>=7):
+    if(media==10):
+        print("Aprovado com Distinção")
+    else:
+        print("Aprovado")
+else:
+    print("Reprovado")
