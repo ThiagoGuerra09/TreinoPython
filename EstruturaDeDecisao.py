@@ -47,3 +47,15 @@ if(media>=7):
         print("Aprovado")
 else:
     print("Reprovado")
+  
+6
+numero1=input("Digite um numero:\n")
+numero2=input("Digite um numero:\n")
+numero3=input("Digite um numero:\n")
+def maior(n,m):
+    if(n>=m):
+        return n
+    else:
+        return m
+fim=maior(maior(numero1,numero2),numero3)
+print(fim)
