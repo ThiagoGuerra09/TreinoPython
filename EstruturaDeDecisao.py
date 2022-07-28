@@ -59,3 +59,83 @@ def maior(n,m):
         return m
 fim=maior(maior(numero1,numero2),numero3)
 print(fim)
+
+7
+numero1=input("Digite um numero:\n")
+numero2=input("Digite um numero:\n")
+numero3=input("Digite um numero:\n")
+def maior(n,m):
+    if(n>=m):
+        return n
+    else:
+        return m
+def menor(n,m):
+    if(n<=m):
+        return n
+    else:
+        return m
+Big=maior(maior(numero1,numero2),numero3)
+Small=menor(menor(numero1,numero2),numero3)
+print("O maior é:",Big)
+print("O menor é:",Small)
+
+8
+def menor(n,m):
+    if(n<=m):
+        return n
+    else:
+        return m
+
+numero1=input("Digite um preço:\n")
+numero2=input("Digite um preço:\n")
+numero3=input("Digite um preço:\n")
+
+
+Small=menor(menor(numero1,numero2),numero3)
+print("O menor é:",Small)
+
+9
+numero1=input("Digite um numero:\n")
+numero2=input("Digite um numero:\n")
+numero3=input("Digite um numero:\n")
+def maior(n,m):
+    if(n>=m):
+        return n
+    else:
+        return m
+def menor(n,m):
+    if(n<=m):
+        return n
+    else:
+        return m
+    
+
+
+Big=maior(maior(numero1,numero2),numero3)
+Small=menor(menor(numero1,numero2),numero3)
+
+
+if(numero1!=Big and numero1!=Small):
+    medio=numero1
+else:
+    if(numero2!=Big and numero2!=Small):
+        medio=numero2
+    else: 
+        medio=numero3
+
+print("O maior é:",Big)
+print("O medio é:",medio)
+print("O menor é:",Small)
+
+10
+turno=input("Em qual turno você está? Digite M-matutino, V-Vespertino ou N- Noturno\n")
+if(turno=="M"):
+    print("Bom dia")
+else:
+    if(turno=="V"):
+        print("Boa tarde")
+    else:
+        if(turno=="N"):
+            print("Boa Noite")
+        else:
+            print("Valor inválido")
