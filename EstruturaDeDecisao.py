@@ -139,3 +139,24 @@ else:
             print("Boa Noite")
         else:
             print("Valor inválido")
+11
+salario=input("Digite o seu salario atual:\n")
+salario=float(salario)
+
+if(salario<=280):
+    newsalario=salario+salario*2/10
+    percent="20%"
+if(salario>280 and salario<=700):
+    newsalario=salario+salario*15/100
+    percent="15%"
+if(salario>700 and salario<=1500):
+    newsalario=salario+salario*1/10
+    percent="10%"
+if(salario>1500):
+    newsalario=salario+salario*5/100
+    percent="5%"
+print("salario antigo\n", salario)
+print("percentual de aumento\n", percent)
+print("O valor do aumento é:\n", round(newsalario-salario,2))
+print("O novo salario é:\n", round(newsalario,2))    
+        
