@@ -159,4 +159,19 @@ print("salario antigo\n", salario)
 print("percentual de aumento\n", percent)
 print("O valor do aumento é:\n", round(newsalario-salario,2))
 print("O novo salario é:\n", round(newsalario,2))    
-        
+
+12
+horas=input("Quantas horas você trabalhou esse mês?\n")
+valor=input("Qual o valor da sua hora de serviço?\n")
+bruto=int(horas)*int(valor)
+if(bruto<=900):
+    liquido=bruto-(bruto*21/100)
+if(bruto>900 and bruto<=1500):
+    liquido=bruto-(bruto*26/100)
+if(bruto>1500 and bruto <=2500):
+    liquido=bruto-(bruto*31/100)
+if(bruto>2500):
+    liquido=bruto-(bruto*41/100)
+
+print("Total de descontos:\n", bruto-liquido)
+print("Salario liquido:\n", liquido) 
